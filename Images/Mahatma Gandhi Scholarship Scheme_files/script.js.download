@@ -1,0 +1,1352 @@
+$(document).ready(function(){
+
+
+
+
+
+
+
+//Golden Jubilee Scholarship form
+
+
+
+$('#frmGoldenJubilee').validate({
+
+rules: {
+
+	
+
+   gjs_courseStudying: {
+
+	required: true,
+
+  },
+
+
+gjs_citizenshipAddress: {
+
+	required: true,
+
+  },
+  
+  
+
+gjs_MarksObtainedCBSE: {
+
+ required: true,
+
+range: [1, 10]
+
+  },
+  
+  gjs_NEB_SLCGPA: {
+
+ required: true,
+
+range: [1, 4]
+
+  },
+  
+  
+
+
+   gjs_courseDuration: {
+
+	required: true,
+
+  },
+
+
+   SelectBoard: {
+
+	required: true,
+
+  },
+
+
+   gjs_citizenshipNameType: {
+
+	required: true,
+
+  },
+
+
+
+
+
+
+
+  gjs_fullMark: {
+
+	required: true,
+
+	 number: true,
+
+  },
+
+
+
+
+
+  gjs_markObtained: {
+
+	required: true,
+
+	 number: true,
+
+  },
+
+
+
+   gjs_correspondenceAddress: {
+
+	required: true,
+
+  },
+
+  
+
+    gjs_citizenshipName: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+    
+
+    gjs_studyingInstituteAddress: {
+
+	required: true,
+
+  },
+
+  
+
+   
+
+ 
+
+  
+
+    MarkSheetPercentage: {
+
+	required: true,
+
+  },
+
+  
+
+     gjs_fullName: {
+
+	required: true,
+
+  },
+
+  
+
+
+
+   gjs_passedDistrict: {
+
+	required: true,
+
+  },
+
+  
+
+   gjs_firstName: {
+
+	required: true,
+
+	
+
+  },
+
+
+
+
+
+   gjs_lastName: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+   gjs_dob_month: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+   gjs_dob_day: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+   gjs_dob_year: {
+
+	required: true,
+
+  },
+
+  
+
+     gjs_gender: {
+
+	required: true,
+
+  },
+
+  
+
+   gjs_fatherName: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+gjs_parentName: {
+
+	required: true,
+
+  },
+
+   
+
+
+
+gjs_fatherOccupation: {
+
+	required: true,
+
+  },
+
+
+
+
+
+gjs_symbolNum: {
+
+	required: true,
+
+  },
+
+
+
+
+
+gjs_percentage: {
+
+	required: true,
+
+ number: true,
+
+range: [40, 100]
+
+  },
+
+
+
+gjs_MobileNo: {
+
+ required: true,
+
+ number: true,
+
+  },  
+
+
+
+gjs_EmergencyMobileNo: {
+
+ required: true,
+
+ number: true,
+
+  },  
+
+
+
+  
+
+   gjs_fatherContactNo: {
+
+	required: true,
+
+
+
+	
+
+  },
+
+  
+
+   gjs_motherName: {
+
+	required: true,
+
+  },
+
+  
+
+   gjs_motherOccupation: {
+
+	required: true,
+
+  },
+
+  
+
+   gjs_permanentAddress: {
+
+	required: true,
+
+  },
+
+  
+
+     gjs_permanentAddressDistrict: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+     gjs_permanentAddressPhone: {
+
+	required: true,
+
+	
+
+  },
+
+  
+
+gjs_emailAddress: {
+
+	required: true,
+
+	email:true,
+
+  },
+
+gjs_DOB: {
+
+	required: true,
+
+  },  
+
+  
+
+     gjs_citizenshipNumber: {
+
+	required: true,
+
+
+
+	
+
+  },
+
+  
+
+  
+
+     gjs_instituteName: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+  
+
+    
+
+     gjs_institutionType: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+  
+
+    
+
+     gjs_instituteAddress: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+  
+
+    
+
+     gjs_institutePhone: {
+
+	required: true,
+
+ number: true,
+
+	
+
+	
+
+  },
+
+  
+
+  
+
+    
+
+     gjs_passedYear: {
+
+	required: true,
+
+	number:true,
+
+  },
+
+  
+
+  
+
+    
+
+     gjs_instituteDistrict: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+    
+
+     gjs_totalFullMarks: {
+
+	required: true,
+
+	number:true,
+
+  },
+
+  
+
+      
+
+     gjs_marksObtained: {
+
+	required: true,
+
+	number:true,
+
+  },
+
+  
+
+  
+
+      
+
+     gjs_studyingInstitute: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+      
+
+     gjs_studyingInstitutePhone: {
+
+	required: true,
+
+number:true,
+
+	
+
+  },
+
+  
+
+  
+
+      
+
+     gjs_studyingInstituteCourse: {
+
+	required: true,
+
+  },
+
+  
+
+      
+
+     gjs_annualFamilyIncome: {
+
+ required: true,
+
+ number: true,
+
+range: [1, 200000],
+
+  },
+
+  
+
+      
+
+     gjs_exServiceman: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+      gjs_passportImage: {
+
+	required: true,
+
+	
+
+  },
+
+  
+
+  
+
+       gjs_citizenshipImage: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+       gjs_markSheet: {
+
+	required: true,
+
+  },
+
+  
+
+
+
+
+
+
+
+  PhysicalChallenged: {
+
+ required: true,
+
+  },
+
+
+
+
+
+PassportSizeImage: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+  
+
+CitizenShipFile: {
+
+ required: true,
+
+  },
+
+
+
+annualFamilyIncome:{
+
+ required: true,
+
+  },
+
+
+
+gjs_PricipalCertificate: {
+
+ required: true,
+
+  },
+
+
+
+MarkSheet: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+PricipalCertificate: {
+
+ required: true,
+
+  },
+
+  
+
+  IncomeCertificate: {
+
+ required: true,
+
+  },
+
+
+
+gjs_termsagree: {
+
+	required: true,
+
+  },
+
+  
+
+  
+
+ 
+
+  
+
+  
+
+ 
+
+},
+
+	highlight: function(element) {
+
+		$(element).closest('.control-group').removeClass('success').addClass('error');
+
+	},
+
+	success: function(element) {
+
+		element
+
+		.text('OK!').addClass('valid')
+
+		.closest('.control-group').removeClass('error').addClass('success');
+
+	}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Mahatma Gandhi Scholarship form
+
+
+
+
+
+$('#frmmahatmagandhi').validate({
+
+rules: {
+
+	
+
+Fullname: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+LastName: {
+
+ required: true,
+
+  },
+
+
+
+
+
+DOB: {
+
+ required: true,
+
+  },
+
+
+
+
+
+DOBMonth: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+DOBDay: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+DOBYear: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+Gender: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+
+
+ParentName: {
+
+ required: true,
+
+  },
+
+
+
+
+
+ParentsOccupation: {
+
+ required: true,
+
+  },
+
+  
+  
+  
+  
+  ParentsPermanentAddress: {
+
+ required: true,
+
+  },
+
+  
+
+
+
+
+  
+
+
+
+ParentsMobileNo: {
+
+ required: true,
+
+  },
+
+  
+
+
+
+
+
+
+  
+
+
+
+ 
+
+MobileNo: {
+
+ required: true,
+
+ number: true,
+
+  },  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+FatherOccupation: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+FatherContactNo: {
+
+ required: true,
+
+
+
+ 
+
+  },
+
+
+
+
+
+
+
+MotherName: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+MotherOccupation: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+PermanentAddress: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+PermanentAddressDistrict: {
+
+ required: true,
+
+  },
+
+
+
+CorrespondenceAddress: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+
+
+EmailFirst: {
+
+ required: true,
+
+ email: true,
+
+  },
+
+
+
+EmailSecond: {
+
+equalTo: "#EmailFirst",
+
+
+
+  },
+
+
+
+
+
+CitizenshipNumber: {
+
+ required: true,
+
+
+
+
+
+  },
+
+
+
+
+
+
+
+FamilyAnnualIncome: {
+
+ required: true,
+
+ number: true,
+
+range: [1, 200000]
+
+  },
+
+
+
+
+
+
+
+SLCPassSchool: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+SLCSchoolType: {
+
+ required: true,
+
+  },
+
+  
+
+
+
+SchoolAddress: {
+
+ required: true,
+
+  },
+
+  
+
+SLCGPA: {
+
+ required: true,
+
+range: [1, 4]
+
+  },
+
+  
+
+
+
+MarksObtainedCBSE: {
+
+ required: true,
+
+range: [1, 10]
+
+  },
+  
+  
+
+    
+
+SchoolPhoneNo: {
+
+ required: true,
+
+
+
+
+
+  },
+
+  
+
+  
+
+  SLCPassyear: {
+
+ required: true,
+
+
+
+  },
+
+  
+
+  
+
+    SelectBoard: {
+
+ required: true,
+
+
+
+  },
+
+  
+
+  
+
+   
+
+   
+  CIT_Choice: {
+
+ required: true,
+
+  },
+
+  
+
+ 
+
+  
+
+  SchoolDistrict: {
+
+ required: true,
+
+  },
+
+  
+
+  
+
+  SLCFullMarks: {
+
+ required: true,
+
+   number: true,
+
+  },
+
+  
+
+  
+
+  
+
+  SLCMarksObtained: {
+
+ required: true,
+
+   number: true,
+
+  },
+
+  
+
+  
+
+  InstituteName: {
+
+ required: true,
+
+  },
+
+  
+
+  
+
+  InstituteAddress: {
+
+ required: true,
+
+  },
+
+  
+
+  
+
+  
+
+  InstitutePhone: {
+
+ required: true,
+
+ number: true,
+
+
+
+  },
+
+
+
+
+
+
+
+  
+
+  PhysicalChallenged: {
+
+ required: true,
+
+  },
+
+
+
+
+
+  
+
+ PassportSizeImage: {
+
+ required: true,
+
+  },
+
+
+
+
+
+  
+
+ CitizenShipFile: {
+
+ required: true,
+
+  },
+
+
+
+
+
+  
+
+MarkSheet: {
+
+ required: true,
+
+  },
+
+
+
+
+
+PricipalCertificate: {
+
+ required: true,
+
+  },
+
+
+
+
+
+MarkSheetPercentage: {
+
+ required: true,
+
+  },
+
+  
+
+  IncomeCertificate: {
+
+ required: true,
+
+  },
+
+
+
+
+
+
+
+
+
+  
+
+  termsagree: {
+
+ required: true,
+
+  },
+
+
+
+  
+
+  
+
+ 
+
+},
+
+
+
+
+
+
+
+
+
+	highlight: function(element) {
+
+		$(element).closest('.control-group').removeClass('success').addClass('error');
+
+	},
+
+	success: function(element) {
+
+		element
+
+		.text('OK!').addClass('valid')
+
+		.closest('.control-group').removeClass('error').addClass('success');
+
+	}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}); // end document.ready
